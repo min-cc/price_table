@@ -135,7 +135,6 @@ tr:nth-child(even) {
   }
 
 .button {
-    
     text-align: center;
     padding: 2px;
     width: 150px;
@@ -144,8 +143,23 @@ tr:nth-child(even) {
     background-color: white;
 }
 
+.btn1 {
+  border: solid 1px #00bcd4;
+  color:#00bcd4;
+}
+
+.btn2 {
+  border: solid 1px #6c136f;
+  color:#6c136f
+}
+
+.btn3 {
+  border: solid 1px green;
+  color:green;
+}
+
 .button:hover{
-    background-color: #6c136f;
+    background-color:#6c136f;
     color: white;
     border: none;
 }

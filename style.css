@@ -1,165 +1,183 @@
-body {
-    background-color: #cad3d3;
-    font-family: 'Poppins', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-
+body {
+  background-color: #cad3d3;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  color: grey;
+  text-align: center;
+}
 
 .column {
-    float: left;
-    width: 33.33%;
-    margin: 0.5rem
-    
-  }
-  
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    
-  }
+  width: 286px;
+  height: 635px;
+  background-color: white;
+  margin: 0px 16px;
+}
 
-  .row {
-    margin: 50px 200px;
-    display: flex;
-  }
+.row {
+  display: flex;
+  margin: 0% 18.5%;
+  flex-wrap: wrap;
+  padding-top: 120px;
+}
 
-  
+.round {
+  background-color: white;
+  width: 105px;
+  height: 105px;
+  border-radius: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  z-index: 100;
+}
 
-  .round {
-    background-color: white;
-    border-radius: 60px;
-    width : 120px;
-    height: 120px;
-    text-align: center;
-    position: relative;
-    left: 120px;
-    top: 50px;
-    z-index: 100;
-    
-  }
-  .b {
-      position: relative;
-      width: 360px;
-      height: 800px;
-      background-color: white;
-  }
+.rnd2 {
+  background-color: black;
+}
 
-  .icon {
-      z-index: 100;
-      position: absolute;
-      top : 5%;
-      left : 5%;
-      transform: translate(-50%, -50%);
-  }
+p.price {
+  font-size: 25px;
+  padding-top: 25px;
+}
 
-  #img {
-      width: 400px;
-      height: 240px;
-      
-  }
+.pr1 {
+  color: #00bcd4;
+}
 
+.pr2 {
+  color: rgb(196, 28, 112);
+}
 
+.pr3 {
+  color: rgb(8, 230, 8);
+}
 
-  .price {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(19, 66, 196);
-    z-index: 100;
-  }
+p.price-bottom {
+  font-size: 12px;
+  font-weight: 600;
+}
 
-  .text-center {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    z-index: 100;
-    font-size: 40px;
-  }
+.image {
+  width: 100%;
+  height: 224px;
+  position: relative;
+  margin-top: -105px;
+}
 
-  .text-bottom {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    z-index: 100;
-    font-size: 12px;
-  }
+.img1 {
+  background-image: url(/publics/ocean.png);
+  filter: grayscale(40%);
+  background-size: 198%;
+  background-position: 12% 52%;
+}
 
-  
+.img2 {
+  background-image: url(/publics/mountain.png);
+  filter: grayscale(20%);
+  background-size: 173%;
+  background-position: 25% 101%;
+}
 
-  .image{
-      position: relative;
-  }
+.img3 {
+  background-image: url(/publics/forest.png);
+  background-size: 117%;
+  background-position: 27% 56%;
+}
 
-  .overlay {
-    background-color: rgba(32, 34, 41, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+.layer {
+  background-color: rgba(88, 80, 165, 0.5);
+}
 
+.title {
+  color: white;
+  font-size: 35px;
+  line-height: 224px;
+  z-index: 100;
+  letter-spacing: 3px;
+}
+
+.title-mid {
+  color: white;
+  transform: translate(0%, 126%);
+}
+
+#mountain {
+  font-size: 35px;
+  letter-spacing: 3px;
+}
+
+#mountain-bottom {
+  font-size: 11px;
+}
+
+.subtitle {
+  padding-top: 17px;
+}
+
+.subtitle-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.subtitle-text-small {
+  font-size: 10px;
+}
+
+.content-item {
+  height: 42px;
+  line-height: 42px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.content-item:nth-child(2n + 1) {
+  background-color: #f4f6f7;
+}
 
 .content {
-    text-align: center;
-    color: grey;
+  padding-top: 20px;
 }
 
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    height: 300px;
-    background-color: #f4f6f7;
-    color: grey;
-    
-  }
-
-td {
-   
-        
-        padding: 8px;
-        text-align: center;
-      
+.btn {
+  background-color: white;
+  margin-top: 15%;
+  width: 133px;
+  height: 41px;
+  font-size: 16px;
 }
 
-tr:nth-child(even) {
-    background-color: white;
-  }
-
-.button {
-    text-align: center;
-    padding: 2px;
-    width: 150px;
-    height: 50px;
-    font-size: 25px;
-    background-color: white;
+.btn:hover {
+  background-color: #6c136f;
+  color: white;
+  border: none;
 }
 
 .btn1 {
-  border: solid 1px #00bcd4;
-  color:#00bcd4;
+  border: 1px solid #00bcd4;
+  color: #00bcd4;
 }
 
 .btn2 {
-  border: solid 1px #6c136f;
-  color:#6c136f
+  border: 1px solid #6c136f;
+  color: #6c136f;
 }
 
 .btn3 {
-  border: solid 1px green;
-  color:green;
+  border: 1px solid rgb(8, 230, 8);
+  color: rgb(8, 230, 8);
 }
 
-.button:hover{
-    background-color:#6c136f;
-    color: white;
-    border: none;
+.new {
+  transform: translate(-45%, -167%);
+}
+
+.new-alt {
+  font-size: 15px;
+  color: white;
+  margin-top: -49px;
 }

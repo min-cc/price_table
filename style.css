@@ -13,16 +13,17 @@ body {
 
 .column {
   width: 286px;
+  min-width: 250px;
   height: 635px;
   background-color: white;
-  margin: 0px 16px;
+  margin: 40px 16px;
 }
 
 .row {
   display: flex;
   margin: 0% 18.5%;
   flex-wrap: wrap;
-  padding: 120px 0px 100px 0px;
+  padding: 80px 0px 100px 0px;
 }
 
 .round {
@@ -104,11 +105,13 @@ p.price-bottom {
 .title-mid {
   color: white;
   transform: translate(0%, 126%);
+  overflow: hidden;
 }
 
 #mountain {
   font-size: 35px;
   letter-spacing: 3px;
+  
 }
 
 #mountain-bottom {

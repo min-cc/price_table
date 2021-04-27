@@ -22,7 +22,7 @@ body {
   display: flex;
   margin: 0% 18.5%;
   flex-wrap: wrap;
-  padding-top: 120px;
+  padding: 120px 0px 100px 0px;
 }
 
 .round {
@@ -70,21 +70,21 @@ p.price-bottom {
 }
 
 .img1 {
-  background-image: url(/publics/ocean.png);
+  background-image: url('./publics/ocean.png');
   filter: grayscale(40%);
   background-size: 198%;
   background-position: 12% 52%;
 }
 
 .img2 {
-  background-image: url(/publics/mountain.png);
+  background-image: url('./publics/mountain.png');
   filter: grayscale(20%);
   background-size: 173%;
   background-position: 25% 101%;
 }
 
 .img3 {
-  background-image: url(/publics/forest.png);
+  background-image: url('./publics/forest.png');
   background-size: 117%;
   background-position: 27% 56%;
 }

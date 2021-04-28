@@ -20,9 +20,10 @@ body {
 }
 
 .row {
-  display: flex;
   margin: 0% 18.5%;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 80px 0px 100px 0px;
 }
 
@@ -154,25 +155,38 @@ p.price-bottom {
   font-size: 16px;
 }
 
-.btn:hover {
-  background-color: #6c136f;
-  color: white;
-  border: none;
-}
-
 .btn1 {
   border: 1px solid #00bcd4;
   color: #00bcd4;
 }
 
+.btn1:hover {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+}
+
 .btn2 {
   border: 1px solid #6c136f;
   color: #6c136f;
+
+}
+
+.btn2:hover {
+  background-color: #6c136f;
+  color: white;
+  border: none;
 }
 
 .btn3 {
   border: 1px solid rgb(8, 230, 8);
   color: rgb(8, 230, 8);
+}
+
+.btn3:hover {
+  background-color: rgb(8, 230, 8);
+  color: white;
+  border: none;
 }
 
 .new {

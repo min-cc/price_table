@@ -13,6 +13,11 @@
   src: url('./fonts/Montserrat-Bold.ttf');
 }
 
+@font-face {
+  font-family: 'Montserrat-light';
+  src: url('./fonts/Montserrat-ExtraLight.ttf');
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -26,15 +31,14 @@ body {
 }
 
 .column {
-  width: 286px;
-  min-width: 250px;
-  height: 635px;
+  width: 360px;
+  min-width: 300px;
   background-color: white;
-  margin: 40px 16px;
+  margin: 40px 20px;
+  position: relative;
 }
 
 .row {
-  margin: 0% 18.5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -43,12 +47,12 @@ body {
 
 .round {
   background-color: white;
-  width: 105px;
-  height: 105px;
+  width: 122px;
+  height: 122px;
   border-radius: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
-  position: relative;
+  position: absolute;
   z-index: 100;
 }
 
@@ -56,10 +60,10 @@ body {
   background-color: black;
 }
 
-p.price {
-  font-size: 25.32pt;
+.price {
+  font-size: 32px;
   font-family: 'SourceSansPro-Light';
-  padding-top: 25px;
+  padding-top: 30px;
 }
 
 .pr1 {
@@ -75,21 +79,19 @@ p.price {
 }
 
 p.price-bottom {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .image {
-  width: 100%;
-  height: 224px;
+  padding-bottom: 75%;
   position: relative;
-  margin-top: -105px;
 }
 
 .img1 {
   background-image: url('./publics/ocean.png');
   filter: grayscale(40%);
-  background-size: 198%;
-  background-position: 12% 52%;
+  background-size: 166%;
+  background-position: 14% 55%;
 }
 
 .img2 {
@@ -101,59 +103,70 @@ p.price-bottom {
 
 .img3 {
   background-image: url('./publics/forest.png');
-  background-size: 117%;
-  background-position: 27% 56%;
+  background-size: 120%;
+  background-position: 15%;
 }
 
 .layer {
   background-color: rgba(88, 80, 165, 0.5);
+  height: 100%;
+    width: 100%;
+    top: 0;
+    position: absolute;
+
 }
 
 .title {
   color: white;
-  font-size: 30px;
-  font-family: "Poppins", sans-serif;
-  line-height: 224px;
+  font-size: 36px;
+  font-family: 'Montserrat-light';
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50%);
   z-index: 100;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
+  position: absolute;
 }
 
 .title-mid {
   color: white;
-  transform: translate(0%, 150%);
-  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
 
 #mountain {
-  font-size: 30px;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 3px;
+  font-size: 36px;
+  font-family: 'Montserrat-light';
+  letter-spacing: 2px;
   
 }
 
 #mountain-bottom {
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .subtitle {
-  padding-top: 17px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .subtitle-text {
-  font-size: 18px;
+  font-size: 24px;
   font-family: 'SourceSansPro-Light';
   font-weight: 600;
 }
 
 .subtitle-text-small {
-  font-size: 12px;
+  font-size: 14px;
   color: #adb9c3;
 }
 
 .content-item {
-  height: 42px;
-  line-height: 42px;
-  font-size: 12px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -161,16 +174,14 @@ p.price-bottom {
   background-color: #f4f6f7;
 }
 
-.content {
-  padding-top: 20px;
-}
-
 .btn {
   background-color: white;
-  margin-top: 15%;
-  width: 133px;
-  height: 41px;
-  font-size: 16px;
+  width: 170px;
+  height: 50px;
+  font-size: 19px;
+  font-family: 'Montserrat-light';
+  font-weight: 600;
+  margin: 50px 100px 50px 100px;
 }
 
 .btn1 {
@@ -208,8 +219,8 @@ p.price-bottom {
 }
 
 .new {
-  transform: translate(-45%, -90%);
-  position: relative;
+  transform: translate(-30%, -20%);
+  position: absolute;
 }
 
 .new-alt {

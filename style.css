@@ -190,11 +190,12 @@ p.price-bottom {
 }
 
 .new {
-  transform: translate(-45%, -167%);
+  transform: translate(-45%, -90%);
+  position: relative;
 }
 
 .new-alt {
   font-size: 15px;
   color: white;
-  margin-top: -49px;
+  transform: translate(0%, -215%);
 }

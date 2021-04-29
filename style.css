@@ -31,8 +31,10 @@ body {
 }
 
 .column {
-  width: 360px;
-  min-width: 300px;
+  /* width: 360px;
+  min-width: 300px; */
+  width: 100%;
+  max-width: 360px;
   background-color: white;
   margin: 40px 20px;
   position: relative;
@@ -54,6 +56,9 @@ body {
   transform: translate(-50%, -50%);
   position: absolute;
   z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .rnd2 {
@@ -63,7 +68,6 @@ body {
 .price {
   font-size: 32px;
   font-family: 'SourceSansPro-Light';
-  padding-top: 30px;
 }
 
 .pr1 {
@@ -75,7 +79,7 @@ body {
 }
 
 .pr3 {
-  color: rgb(8, 230, 8);
+  color: #32ad1e;
 }
 
 p.price-bottom {
@@ -89,16 +93,14 @@ p.price-bottom {
 
 .img1 {
   background-image: url('./publics/ocean.png');
-  filter: grayscale(40%);
-  background-size: 166%;
-  background-position: 14% 55%;
+  background-size: 200%;
+  background-position: 20% 55%;
 }
 
 .img2 {
   background-image: url('./publics/mountain.png');
-  filter: grayscale(20%);
-  background-size: 173%;
-  background-position: 25% 101%;
+  background-size: cover;
+  background-position: 50%;
 }
 
 .img3 {
@@ -108,12 +110,11 @@ p.price-bottom {
 }
 
 .layer {
-  background-color: rgba(88, 80, 165, 0.5);
+  background-color: rgba(100, 80, 120, 0.5);
   height: 100%;
-    width: 100%;
-    top: 0;
-    position: absolute;
-
+  width: 100%;
+  top: 0;
+  position: absolute;
 }
 
 .title {
@@ -148,8 +149,7 @@ p.price-bottom {
 }
 
 .subtitle {
-  padding-top: 25px;
-  padding-bottom: 25px;
+    padding: 25px 50px;
 }
 
 .subtitle-text {
@@ -164,14 +164,19 @@ p.price-bottom {
 }
 
 .content-item {
-  height: 50px;
-  line-height: 50px;
+  padding : 20px 50px;
   font-size: 16px;
   font-weight: 600;
 }
 
 .content-item:nth-child(2n + 1) {
   background-color: #f4f6f7;
+}
+
+.botton-box {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
 }
 
 .btn {
@@ -181,7 +186,6 @@ p.price-bottom {
   font-size: 19px;
   font-family: 'Montserrat-light';
   font-weight: 600;
-  margin: 50px 100px 50px 100px;
 }
 
 .btn1 {
@@ -198,7 +202,6 @@ p.price-bottom {
 .btn2 {
   border: 1px solid #6c136f;
   color: #6c136f;
-
 }
 
 .btn2:hover {
@@ -208,12 +211,12 @@ p.price-bottom {
 }
 
 .btn3 {
-  border: 1px solid rgb(8, 230, 8);
-  color: rgb(8, 230, 8);
+  border: 1px solid #32ad1e;
+  color: #32ad1e;
 }
 
 .btn3:hover {
-  background-color: rgb(8, 230, 8);
+  background-color: #32ad1e;
   color: white;
   border: none;
 }
@@ -227,5 +230,5 @@ p.price-bottom {
   font-size: 12px;
   font-family: 'Montserrat-Bold';
   color: white;
-  transform: translate(0%, -290%);
+  transform: translate(0%, -300%);
 }
